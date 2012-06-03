@@ -1,4 +1,6 @@
 Schemadia::Application.routes.draw do
+  get "diagram/index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
