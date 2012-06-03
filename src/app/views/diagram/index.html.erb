@@ -1,7 +1,15 @@
-<h1>Diagram#index</h1>
-<p>Find me in app/views/diagram/index.html.erb</p>
-
-
-<div>
-
+<div class="row">
+  <div class="column w-10-percent">
+    <a href="javascript: void(0)" id="new-table-link" accesskey="t">New Table</a>
+  </div>
+  <div class="column w-90-percent" id="workspace-container" style="position:relative">
+    <p>&nbsp;</p>
+  </div>
+  <div class="clear-row">
+    &nbsp;
+  </div>
 </div>
+
+<script id="table-template" type="text/x-handlebars-template">
+  <%= render :partial => 'handlebars_table_template' %>
+</script>

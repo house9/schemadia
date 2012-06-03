@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Schemadia</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Schemadia</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
 
-<%= yield %>
+    <style type="text/css">
+      body {
+        font-family: Verdana;
+      }
 
-</body>
+      div.rows div.row {
+        clear:both;
+/*        border-bottom: 1px dashed black;*/
+        width: 100%;
+      }
+
+      div.rows div.column {
+        float: left;
+      }
+
+      div.rows div.clear-row {
+        line-height: 0px;
+        font-size: 0px;
+        clear:both;
+      }
+
+      .w-90-percent {
+        width: 90%;
+      }
+      .w-70-percent {
+        width: 70%;
+      }
+      .w-30-percent {
+        width: 30%;
+      }
+      .w-10-percent {
+        width: 10%;
+      }
+
+      #container {
+        margin: auto;
+        width: 99%;
+        border: 2px solid black;
+      }
+
+      /* http://stackoverflow.com/questions/3540194/how-to-make-a-grid-like-graph-paper-grid-with-just-css */
+      #workspace-container {
+        background: url('/assets/grid-image.png');
+        /*background-color: #ebebeb;*/
+        min-height: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="rows">
+        <%= yield %>
+      </div>
+    </div>
+  </body>
 </html>

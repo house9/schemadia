@@ -40,6 +40,10 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    handlebars_assets (0.4.4)
+      execjs (>= 1.2.9)
+      sprockets (>= 2.0.3)
+      tilt
     hike (1.2.1)
     i18n (0.6.0)
     javascript_safe_logger (0.0.4)
@@ -106,6 +110,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  handlebars_assets
   javascript_safe_logger
   jquery-rails
   rails (= 3.2.5)

@@ -1,3 +1,11 @@
-// Place all the styles related to the diagram controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.table-container {
+  border: solid 1px green;
+  min-height: 220px;
+  min-width: 320px;
+  width: 320px;
+  background-color: #fff;
+
+  .table-name-edit-container {
+    display: none;
+  }
+}
